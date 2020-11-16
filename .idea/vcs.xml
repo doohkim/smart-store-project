@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/front/test-code" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ubuntu@3.135.65.239" vcs="Git" />
+  </component>
+</project>

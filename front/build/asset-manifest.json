@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.0f721302.chunk.css",
+    "main.js": "/static/js/main.234d0506.chunk.js",
+    "main.js.map": "/static/js/main.234d0506.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.f0b93a97.js",
+    "runtime-main.js.map": "/static/js/runtime-main.f0b93a97.js.map",
+    "static/js/2.d71d12bf.chunk.js": "/static/js/2.d71d12bf.chunk.js",
+    "static/js/2.d71d12bf.chunk.js.map": "/static/js/2.d71d12bf.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.0f721302.chunk.css.map": "/static/css/main.0f721302.chunk.css.map",
+    "static/js/2.d71d12bf.chunk.js.LICENSE.txt": "/static/js/2.d71d12bf.chunk.js.LICENSE.txt",
+    "static/media/ic-delete.9944d27a.svg": "/static/media/ic-delete.9944d27a.svg",
+    "static/media/ic-excel.cd334693.svg": "/static/media/ic-excel.cd334693.svg",
+    "static/media/ic-search-able.6b1b4c8b.svg": "/static/media/ic-search-able.6b1b4c8b.svg",
+    "static/media/left-arrow.f3e0b9b3.svg": "/static/media/left-arrow.f3e0b9b3.svg",
+    "static/media/right-arrow.c5bccdc4.svg": "/static/media/right-arrow.c5bccdc4.svg",
+    "static/media/smartstorebackground.de0466f1.png": "/static/media/smartstorebackground.de0466f1.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f0b93a97.js",
+    "static/js/2.d71d12bf.chunk.js",
+    "static/css/main.0f721302.chunk.css",
+    "static/js/main.234d0506.chunk.js"
+  ]
+}
