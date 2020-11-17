@@ -24,7 +24,7 @@ DOCKER_OPTIONS = [
     # background로 실행하는 옵션 추가
     ('-d', ''),
     ('-p', '80:80'),
-    ('-p', '5000:5000'),
+    # ('-p', '5000:5000'),
     ('--name', DOCKER_NAME),
 ]
 
@@ -66,7 +66,11 @@ def server_init():
 def server_pull_run():
     print('*******************server docker hub pull ************************')
     ssh_run(f'sudo docker stop {DOCKER_NAME}', ignore_error=True)
+    print('*******************server docker stop ************************')
+
     ssh_run(f'sudo docker pull {DOCKER_IMAGE}')
+    print('*******************server docker hub pull ************************')
+
     ssh_run('sudo docker run {options} {tag} /bin/bash'.format(
         options=' '.join([
             f'{key} {value}' for key, value in DOCKER_OPTIONS
@@ -103,8 +107,8 @@ def server_cmd():
 
 if __name__ == '__main__':
     try:
-        local_build_push()
-        server_init()
+        # local_build_push()
+        # server_init()
         server_pull_run()
         copy_secrets()
         server_cmd()
