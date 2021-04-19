@@ -48,6 +48,10 @@ INSTALLED_APPS = [
 
     'members.apps.MembersConfig',
     'search.apps.SearchConfig',
+
+    'debug_toolbar',
+
+    # 'ssl_server',
 ]
 
 MIDDLEWARE = [
@@ -60,6 +64,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'debug_toolbar.middleware.DebugToolbarMiddleware',
+
 ]
 ROOT_URLCONF = 'config.urls'
 
@@ -181,3 +187,5 @@ CORS_ORIGIN_WHITELIST = (
     'http://127.0.0.1:5000',
 
 )
+
+INTERNAL_IPS = ('http://keyword-it-dooh.s3-website.ap-northeast-2.amazonaws.com/')

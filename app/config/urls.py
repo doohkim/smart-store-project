@@ -34,7 +34,6 @@ urlpatterns = [
 
     # api
     path('api/', include(urlpatterns_api)),
-
 ]
 
 if settings.DEBUG:

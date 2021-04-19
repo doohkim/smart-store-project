@@ -24,8 +24,11 @@ DOCKER_OPTIONS = [
     # background로 실행하는 옵션 추가
     ('-d', ''),
     ('-p', '80:80'),
-    # ('-p', '5000:5000'),
+    ('-p', '443:443'),
     ('--name', DOCKER_NAME),
+
+    # Let's Encrypt volume
+    ('-v', '/etc/letsencrypt:/etc/letsencrypt'),
 ]
 
 IDENTITY_FILE = os.path.join(HOME, '.ssh', 'smartstore.pem')
@@ -107,8 +110,8 @@ def server_cmd():
 
 if __name__ == '__main__':
     try:
-        # local_build_push()
-        # server_init()
+        local_build_push()
+        server_init()
         server_pull_run()
         copy_secrets()
         server_cmd()

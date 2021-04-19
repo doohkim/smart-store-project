@@ -11,6 +11,12 @@ class SingleKeywordSearchAPIView(GenericAPIView):
     authentication_classes = []
     permission_classes = [AllowAny]
 
+    def get(self, request):
+        data = {
+            "hello": "hello"
+        }
+        Response(data, status=status.HTTP_200_OK)
+
     def post(self, request):
         print(request.data)
         # keyword_list = request.data.get('keyword', None).split(',')
@@ -95,8 +101,8 @@ class SingleZeroKeywordSearchAPIView(GenericAPIView):
     permission_classes = [AllowAny]
 
     def post(self, request):
-        keyword_input_text = request.data.get('keyword', None).strip()
-        company_name = request.data.get('company', None).strip()
+        keyword_input_text = request.data.get('keyword', None)
+        company_name = request.data.get('company', None)
         if keyword_input_text == '':
             return Response(status=status.HTTP_400_BAD_REQUEST)
         if company_name == '':
@@ -138,8 +144,8 @@ class SingleFirstKeywordSearchAPIView(GenericAPIView):
     permission_classes = [AllowAny]
 
     def post(self, request):
-        keyword_input_text = request.data.get('keyword', None).strip()
-        company_name = request.data.get('company', None).strip()
+        keyword_input_text = request.data.get('keyword', None)
+        company_name = request.data.get('company', None)
         if keyword_input_text == '':
             return Response(status=status.HTTP_400_BAD_REQUEST)
         if company_name == '':
@@ -181,8 +187,8 @@ class SingleSecondKeywordSearchAPIView(GenericAPIView):
     permission_classes = [AllowAny]
 
     def post(self, request):
-        keyword_input_text = request.data.get('keyword', None).strip()
-        company_name = request.data.get('company', None).strip()
+        keyword_input_text = request.data.get('keyword', None)
+        company_name = request.data.get('company', None)
         if keyword_input_text == '':
             return Response(status=status.HTTP_400_BAD_REQUEST)
         if company_name == '':
@@ -224,8 +230,8 @@ class SingleThirdKeywordSearchAPIView(GenericAPIView):
     permission_classes = [AllowAny]
 
     def post(self, request):
-        keyword_input_text = request.data.get('keyword', None).strip()
-        company_name = request.data.get('company', None).strip()
+        keyword_input_text = request.data.get('keyword', None)
+        company_name = request.data.get('company', None)
         if keyword_input_text == '':
             return Response(status=status.HTTP_400_BAD_REQUEST)
         if company_name == '':
